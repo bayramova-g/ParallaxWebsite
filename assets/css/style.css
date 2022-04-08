@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Gideon+Roman&family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,700&family=Poppins:wght@200;300&display=swap");
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.8em;
+  color: #666;
+}
+
+.post1,
+.post2,
+.post3 {
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  opacity: 0.7;
+}
+
+.post1 {
+  background-image: url(/assets/image/image1.jpeg);
+  min-height: 100%;
+}
+
+.post-text {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  text-align: center;
+  font-size: 27px;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.post-text .border {
+  background-color: #111;
+  color: white;
+  padding: 20px;
+}
+
+.section {
+  display: block;
+  text-align: center;
+  padding: 50px 80px;
+}
+
+.section-light {
+  background-color: #f4f4f4;
+  color: #666;
+}
+
+.post2 {
+  background-image: url(/assets/image/image2.jpeg);
+  min-height:400px;
+}
+
+.section-dark {
+  background-color: #282e34;
+  color: #ddd;
+}
+
+.post3{
+  background-image: url(/assets/image/image3.jpeg);
+  min-height:400px;
+}
+
+.post-text .border.trans {
+  background-color: transparent;
+}
+
+
+@media (max-width: 568px) {
+  .post1,
+  .post2,
+  .post3 {
+    background-attachment: scroll;
+  }
+}
